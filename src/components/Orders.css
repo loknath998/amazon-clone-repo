@@ -1,0 +1,29 @@
+.orders {
+    background-color: white;
+    max-width: 1500px;
+    min-height: 75vh;
+    /* padding: 0 20px; */
+    /* width: 100vw; */
+    /* min-width: 850px; */
+    /* margin: auto; */
+}
+.orders__container {
+    max-width: 900px;
+    /* padding: 0 20px; */
+    /* width: 80vw; */
+    min-width: 800px;
+    margin: auto;
+}
+.orders__title {
+    /* background-color: antiquewhite; */
+    height: 5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.Order__items {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #d8dcdc; */
+}

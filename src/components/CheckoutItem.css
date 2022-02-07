@@ -1,0 +1,99 @@
+* {
+    /* border: 1px solid black; */
+}
+.checkout__item {
+    /* padding: 10px; */
+    width: 100%;
+    /* margin: 10px; */
+    /* position: relative; */
+    display: flex;
+    align-items: flex-start;
+    height: 160px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* max-height: 200px; */
+}
+.checkout__itemImage {
+    /* height: 180px; */
+    /* width: 180px; */
+    /* max-width: 225px; */
+    height: 100%;
+    object-fit: contain;
+    /* height: 60%; */
+    /* background-color: blue; */
+}
+.checkout__itemInfo {
+    /* padding-left: 5px; */
+    height: 100%;
+    /* flex: 1; */
+    width: 100%;
+    max-width: 630px;
+    /* background-color: antiquewhite; */
+    /* margin-right: 30px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+/* .checkout__itemImage > img {
+    height: 40%;
+    object-fit: contain;
+} */
+.checkout__itemPrice {
+    /* right: 0; */
+
+    /* position: absolute; */
+    /* background-color: aquamarine; */
+    font-size: 18px;
+    height: 100%;
+}
+.checkout__itemTitle {
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+.checkout__itemInfo > p {
+    font-size: 12px;
+}
+.checkout__itemStock {
+    color: #499d49;
+    font-weight: 600;
+}
+.checkout__itemGift {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.checkout__itemGift > input {
+    margin-right: 5px;
+}
+
+.checkout__itemOption {
+    margin: 5px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #1c8192;
+}
+
+.checkout__itemQtyUpdate {
+    background-color: rgb(255, 200, 60);
+    border: none;
+    border-radius: 5px;
+    color: #111;
+    border: 1px solid #ffb20d;
+    font-size: 14px;
+    padding: 1px 5px;
+    font-weight: bold;
+}
+.checkout__itemQtyUpdate:hover {
+    background-color: #ffb20d;
+    /* border: 1px solid rgb(252, 192, 41); */
+}
+.checkout__itemOptionWorking:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+.saveforlater {
+    margin-top: 10px;
+    /* background-color: antiquewhite; */
+    background-color: white;
+    border-radius: 3px;
+}
+.saveforlater__container {
+    display: flex;
+    padding: 5px;
+    margin-top: 5px;
+    /* background-color: aquamarine; */
+}
+.saveforlater__image {
+    flex: 0.2;
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+}
+.saveforlater__info {
+    flex: 0.8;
+}
+.saveforlater__title {
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.saveforlater__info > button {
+    background-color: #ffd814;
+    background: linear-gradient(to bottom, #ffe29f, #fad26d, #ffcd4e);
+
+    margin: 2px 2px;
+    border: 1px solid #b99948;
+    border-radius: 3px;
+}
+.saveforlater__stars {
+    font-size: 12px;
+}

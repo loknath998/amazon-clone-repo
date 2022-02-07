@@ -1,0 +1,114 @@
+.ordered__product {
+    margin-bottom: 10px;
+    /* margin: auto; */
+    /* border-radius: 10px; */
+}
+.ordered__productContainer {
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 0.8rem;
+    color: #7e8181;
+    /* background-color: aquamarine; */
+    display: flex;
+    border: 1px solid #d8dcdc;
+    flex-direction: column;
+}
+.ordered__productDetails {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f2f2;
+    border-bottom: 1px solid #d8dcdc;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+}
+.ordered__productContents {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #d8dcdc;
+    /* margin-bottom: 5px; */
+}
+.ordered__productDate {
+    flex: 0.2;
+}
+.ordered__productPrice,
+.ordered__productAddress {
+    flex: 0.15;
+}
+.ordered__productId {
+    flex: 0.4;
+    text-align: right;
+}
+.ordered__productId > button {
+    margin: 2px 0 2px 10px;
+    color: #027286;
+    border: none;
+}
+
+.ordered__productContents > img {
+    /* width: 100%; */
+
+    max-height: 100px;
+    object-fit: contain;
+    flex: 0.15;
+}
+.ordered__productOptions {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 1px solid gray; */
+}
+.ordered__productReview {
+    /* flex: 0.25; */
+    width: 230px;
+
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.ordered__productBottom {
+    padding: 15px;
+}
+.ordered__productTitle {
+    color: #55a0ae;
+    color: #09a5c0;
+}
+.ordered__productReturn {
+    color: #1b1d1d;
+    margin-bottom: 2px;
+}
+.ordered__productOptions > button {
+    background-color: #ffd814;
+    border-radius: 5px;
+    border: 1px solid #fdd408;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.ordered__productOptions > button:hover {
+    background-color: #f8b422;
+}
+
+.ordered__productBag {
+    font-size: large;
+    margin: 0 2px;
+}
+.ordered__productReview > button {
+    width: 100%;
+    padding: 0 10px 0 11px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid;
+    border-color: #dfe2e2 #ecefef #e4e8e8 #e9ebeb;
+    box-shadow: 0.2px 0.2px 10px 0.2px #f3f3f3, -0.2px -0.2px 0px 0.1px #dfe2e2;
+}
+.ordered__productBottom {
+    color: #027286;
+}
