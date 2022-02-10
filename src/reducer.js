@@ -84,7 +84,7 @@ const reducer = (state, action) => {
         case "SAVE_FOR_LATER": {
             let index4 = findDuplicate(save_for_later, action.item.id);
             // let newSave_for_later = [...save_for_later];
-            if (index4 == -1) {
+            if (index4 === -1) {
                 return {
                     ...state,
                     save_for_later: [...save_for_later, action.item],

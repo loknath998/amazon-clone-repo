@@ -8,10 +8,19 @@ import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
 } from "firebase/auth";
-
+import { useStateValue } from "../StateProvider";
+import {
+    doc,
+    addDoc,
+    getDoc,
+    setDoc,
+    getFirestore,
+    collection,
+} from "firebase/firestore";
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [{ user, cart, address, save_for_later }, dispatch] = useStateValue();
 
     const navigate = useNavigate(); // earlier it was history
 
@@ -42,9 +51,35 @@ function Login() {
         } else {
             createUserWithEmailAndPassword(auth, email, password)
                 .then((auth) => {
+                    // .then(async (auth) => {
                     console.log("user created");
                     // console.log(auth);
+
                     if (auth) {
+                        ///////////////////////////////////////to add the firsts data to database
+                        console.log("auth 1");
+                        // if (user)
+                        // {
+                        //     const db = getFirestore();
+
+                        //     console.log("auth 2");
+                        //     const collectionRefrence = collection(db, "users");
+
+                        //     await setDoc(doc(collectionRefrence, email), {
+                        //         // await addDoc(doc(collectionRefrence, user?.email), {
+                        //         cart: cart,
+                        //         orders: [],
+                        //         save_for_later: save_for_later,
+                        //         address: address,
+                        //     });
+
+                        //     console.log("auth 3");
+                        //     // console.log("cart changed", cart?.length);
+                        //     // console.log("save_for_later changed", save_for_later);
+                        // }
+
+                        ///////////////////////////////////////to add the firsts data to database
+
                         navigate("/");
                     }
                 })

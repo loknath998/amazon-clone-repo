@@ -29,7 +29,6 @@ function Home() {
                     />
                     <Product
                         id={102}
-                        rating={0}
                         title="OnePlus Nord 2 5G (Blue Haze, 8GB RAM, 128GB Storage)"
                         price={29999}
                         rating={4}
@@ -64,7 +63,7 @@ function Home() {
                     <Product
                         id={106}
                         title="realme narzo 50A (Oxygen Blue , 4GB RAM + 64 GB Storage) Helio G85 Processor | 50MP AI Triple Camera | 6000 mAh Battery"
-                        rating="5"
+                        rating={3}
                         price={14999.99}
                         image="https://images-eu.ssl-images-amazon.com/images/I/71hgVYiuFXL._AC_UL450_SR450,320_.jpg"
                     />

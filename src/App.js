@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -9,7 +9,7 @@ import { auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import { useStateValue } from "./StateProvider";
 import Payment from "./components/Payment";
-import { useSwitch } from "@mui/material";
+
 import {
     doc,
     addDoc,
@@ -21,6 +21,8 @@ import {
 import Orders from "./components/Orders";
 
 function App() {
+    const [newAccount, setNewAccount] = useState(0);
+
     const [{ user, cart, save_for_later, orders, address }, dispatch] =
         useStateValue();
     useEffect(() => {
@@ -64,6 +66,15 @@ function App() {
                 } else {
                     // doc.data() will be undefined in this case
                     console.log("No such document!");
+                    setNewAccount((prev) => prev + 1);
+                    //     const collectionRefrence = collection(db, "users");
+                    //     console.log("cart", cart);
+                    //     await setDoc(doc(collectionRefrence, currentUser?.email), {
+                    //         cart: cart,
+                    //         orders: orders,
+                    //         save_for_later: save_for_later,
+                    //         address: address,
+                    //     });
                 }
 
                 // =======================================
@@ -89,7 +100,7 @@ function App() {
             // console.log("cart changed", cart?.length);
             // console.log("save_for_later changed", save_for_later);
         }
-    }, [cart, save_for_later, address, orders]);
+    }, [cart, save_for_later, address, orders, newAccount]);
 
     return (
         <>
